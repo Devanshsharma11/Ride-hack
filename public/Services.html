@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", "sens-serif";
+            background-color: rgb(247, 247, 247);
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            color: #000000;
+            z-index: 1000;
+        }
+
+        .header-wrapper {
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-name {
+            font-size: 18px;
+        }
+
+        .menu-item {
+            margin-right: 20px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .home {
+            height: 460px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 60px;
+            background-image: url('UAV.webp');
+            background-size: cover;
+            background-position: center;
+            margin-top: 40px;
+        }
+
+        .container {
+            text-align: left;
+            color: white;
+        }
+
+        .container h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            max-width: 550px;
+        }
+
+        .info {
+            margin-top: 0;
+            padding: 60px 160px;
+            text-align: center;
+        }
+
+        .info p {
+            text-align: justify;
+            word-spacing: 4px;
+            line-height: 2;
+        }
+
+
+
+        .card {
+            width: 220px;
+            height: 120px;
+            background-color: #ffffff;
+            padding: 14px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin-bottom: 60px;
+        }
+
+        .text {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4148aa;
+            transition: color 0.3s ease;
+        }
+
+        .photo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 14px;
+            overflow: hidden;
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card:hover {
+            background-color: #4148aa;
+        }
+
+        .card:hover .text {
+            color: #ffffff;
+        }
+
+        .card-collection {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 200px;
+        }
+
+
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+            padding: 0 120px;
+        }
+
+        .grid-item {
+            height: 250px;
+            padding: 10px;
+        }
+
+        .grid-item h3 {
+            font-weight: 500;
+            font-size: 22px;
+        }
+
+        .grid-item p {
+            text-align: justify;
+            margin-bottom: 0;
+            font-size: 15px;
+            line-height: 1.5;
+            color: rgb(82, 81, 81);
+        }
+
+
+
+        .contact-section {
+            height: 280px;
+            width: 100%;
+            background-image: url('Surr.jpg');
+            background-size: cover;
+            background-position: top;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 16px;
+            color: #623179;
+        }
+
+        .contact-section p {
+            margin-bottom: 16px;
+            font-size: large;
+            font-weight: bold;
+            letter-spacing: 0.8px;
+        }
+
+        .contact-section button {
+            padding: 10px 20px;
+            background-color: #3f1e64;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+
+
+        .footer{
+            color: #000000;
+            padding: 30px 100px;
+        }
+
+        .webInfo {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+        }
+
+        .webInfo section {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .webInfo h3 {
+            margin-bottom: 10px;
+        }
+
+        .webInfo p {
+            font-size: 15px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 160px;
+        }
+
+        .logo img {
+            height: 80%;
+            margin-bottom: 30px;
+        }
+
+        .mediaIcons{
+            display: flex;
+            justify-content: center;
+        }
+
+        .mediaIcon{
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            border: 2px solid black;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+        }
+
+        .mediaIcon img{
+            height: 70%;
+        }
+
+        .mediaCopyRight p{
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        
+        .mediaCopyRight span{
+            vertical-align:middle;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-wrapper">
+
+            <div>
+                <span class="logo-name">DREON</span>
+            </div>
+            <nav>
+                <a href="#" class="menu-item">Home</a>
+                <a href="#" class="menu-item" id="scrollButton">Services</a>
+                <a href="#" class="menu-item">About Us</a>
+                <a href="#" class="menu-item">Blog</a>
+                <a href="#" class="menu-item">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="home">
+        <div class="container">
+            <h1>UAV Data Processing</h1>
+            <p>DREON is your go-to source for cutting-edge drone solutions. We're a passionate team dedicated to using
+                drones to solve business challenges and enhance operations. Our mission is to deliver exceptional value
+                through innovative aerial services. With expertise, advanced technology, and a personalized approach,
+                we're committed to exceeding client expectations every time.</p>
+        </div>
+    </div>
+
+    <div class="info">
+        <h2>Drone Surveying / Mapping in India</h2>
+        <p>Equinox"U+2019"s Drones strives to provide clear-cut Aerial Drone Surveying/Mapping services across India.
+            From
+            having served the Government and Private sector in Land Surveying, Aerial Surveying for Land Management &
+            Development, Land Slope monitoring, Stockpile volumetric measurements, Designing smart cities, Mapping
+            greenfield projects, etc. our experience remains unsurpassed. Equinox’s Drones prioritizes quality and,
+            thus, perpetually continues to achieve highly accurate topographic maps with Centimeter level Accuracy at
+            any given time. Adorned with state-of-the-art surveying drones and a team of expert licensed pilots, our
+            clients can access deliverables with greater speed, thereby facilitating more nimble decision-making
+            processes.
+            <br>
+            <br>
+            Using Aerial Photography, we indulge in high-quality aerial shoots to deliver panoramas, images, and video
+            tours of nearby facilities. Comprehensive and imaginative Aerial Imagery enables businesses to sell their
+            property quicker and appealingly project them to their clients.
+            <br>
+            <br>
+            Drones such as DJI Mavic Pro, DJI Phantom, and DJI Inspire 2 enable us to perform more flexibly, fast, and
+            in a cost-saving approach. Our Drone cinematographer catches stunning footage of events with 4k Resolution
+            and 20 Megapixel Drone Images while sustaining audience safety. Besides creative video captures, quadcopters
+            are used to capture aerial images of power plants, high voltage towers, buildings, nature, events, etc. Gain
+            a whole new perspective of your project with aerial imagery!
+        </p>
+    </div>
+
+    <div class="card-collection">
+        <div class="card">
+            <div class="photo">
+                <img src="icon/faster.png" alt="">
+            </div>
+            <p class="text">5x Faster Data Processing</p>
+        </div>
+        <div class="card">
+            <div class="photo">
+                <img src="icon/—Pngtree—people working in a table_7537097.png" alt="">
+            </div>
+            <p class="text">Team of GIS Experts</p>
+        </div>
+        <div class="card">
+            <div class="photo">
+                <img src="icon/truck.png" alt="">
+            </div>
+            <p class="text">Deliverables on Time</p>
+        </div>
+    </div>
+
+    <h1 style="text-align: center; color: rgb(41, 41, 240); font-weight: 600; font-size: 20px;">Deliverables We offer
+    </h1>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h3>Orthomosaic Maps</h3>
+            <p>Drone images are corrected for image distortion and stitched together during post-processing to create a
+                highly-accurate orthomosaic map. Each pixel contains 2D geo-information (X, Y) and can directly procure
+                accurate
+                measurements, such as horizontal distances and surfaces.</p>
+        </div>
+        <div class="grid-item">
+            <h3>3D Point Cloud</h3>
+            <p>A densified point cloud can be generated from drone images. Each point contains geospatial (X, Y, Z) and
+                color
+                information. Provides a very accurate model for distance (slant and horizontal), area, and volume
+                measurements.
+            </p>
+        </div>
+        <div class="grid-item">
+            <h3>Digital Surface Models (DSM)</h3>
+            <p>Drone images can also be used to create DSM models of the area. Each pixel contains 2D information (X, Y)
+                and
+                the altitude (Z value) of the highest point for this position.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Digital Terrain Models (DTM)</h3>
+            <p>After filtering objects such as buildings, the drone images can be used to create DTMs. Each pixel
+                contains
+                2.5D information (X, Y, and Z value of the highest altitude).</p>
+        </div>
+        <div class="grid-item">
+            <h3>Contour Maps</h3>
+            <p>Depending on the project requirements, either the DTM or DSM model, with custom contour intervals, can be
+                used
+                to create a contour lines map. Gives a better understanding of the surface of the area shot by the
+                drone.</p>
+        </div>
+        <div class="grid-item">
+            <h3>3D Textured Mesh</h3>
+            <p>The 3D textured mesh replicates the edges, faces, vertices, and textures of the area captured by the
+                drone.
+                Particularly beneficial for visual inspections and becomes especially valuable when external
+                stakeholders or
+                public participation is integral to a project.</p>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h2>Get in touch with us</h2>
+        <p>Talk to our team for any queries regarding drone surveying for your Industry.</p>
+        <button>Contact Us</button>
+    </div>
+
+    <div class="footer">
+        <div class="webInfo">
+            <div class="logo">
+                <img src="icon/image-removebg-preview (1).png" alt="">
+            </div>
+            <div class="section">
+                <h3>Partnership</h3>
+                <p>Websites</p>
+                <p>Social Media</p>
+                <p>Branding</p>
+            </div>
+            <div class="section">
+                <h3>About</h3>
+                <p>Our Projects</p>
+                <p>Careers</p>
+            </div>
+            <div class="section">
+                <h3>Support</h3>
+                <p>Support Request</p>
+                <p>Contact</p>
+            </div>
+        </div>
+        <div class="mediaInfo">
+            <hr>
+            <div class="mediaIcons">
+                <div class="mediaIcon">
+                    <img src="icon/facebook-f.svg" alt="">
+                </div>
+                <div class="mediaIcon">
+                    <img src="icon/instagram.svg" alt="">
+                </div>
+                <div class="mediaIcon">
+                    <img src="icon/x-twitter.svg" alt="">
+                </div>
+                <div class="mediaIcon">
+                    <img src="icon/whatsapp.svg" alt="">
+                </div>
+                <div class="mediaIcon">
+                    <img src="icon/envelope-regular.svg" alt="">
+                </div>
+            </div>
+            <div class="mediaCopyRight">
+                <p><span>&copy;</span>copyright. All right reserved.</p>
+            </div>
+        </div>
+    </div>
+    
+
+</body>

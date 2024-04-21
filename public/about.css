@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(247, 247, 247);
+
+  }
+
+  P {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    z-index: 1000;
+
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .header-wrapper {
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-name {
+    font-size: 20px;
+
+  }
+
+  .menu-item {
+    margin-right: 20px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .container {
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 100px;
+    margin-top: 50px;
+
+    background-image: url('about-photos/SEC0917-drones-feat-slide1_900px.jpg');
+    background-size: cover;
+    background-position: top;
+
+    color: #ffffff;
+  }
+
+  .container h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+  }
+
+  .mission-container {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    padding: 0 100px;
+    border: 1px solid #ccc;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .mission-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .mission-paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .UniqueValue {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .UniqueValue h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .value-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .value-column {
+    width: calc(33.33% - 20px);
+    background-color: #f0f0f0;
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .value-column img{
+    height: 100px;
+  }
+
+  .value-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .value-paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .founders-info {
+    text-align: center;
+    padding: 20px 100px;
+  }
+
+  .founders-info h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .founders-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+
+  .founder-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(20% - 20px);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .founder-photo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+  
+  .founder-photo img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+
+  .founder-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .founder-info {
+    font-size: 14px;
+  }
+
+  .footer{
+    color: #000000;
+    padding: 30px 100px;
+}
+
+.webInfo {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.webInfo section {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.webInfo h3 {
+    margin-bottom: 10px;
+}
+
+.webInfo p {
+    font-size: 15px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+}
+
+.logo img {
+    height: 80%;
+    margin-bottom: 30px;
+}
+
+.mediaIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.mediaIcon{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.mediaIcon img{
+    height: 70%;
+}
+
+.mediaCopyRight p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.mediaCopyRight span{
+    vertical-align:middle;
+}
+

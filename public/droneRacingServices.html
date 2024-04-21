@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", "sens-serif";
+            background-color: rgb(247, 247, 247);
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            color: #000000;
+            z-index: 1000;
+        }
+
+        .header-wrapper {
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-name {
+            font-size: 18px;
+        }
+
+        .menu-item {
+            margin-right: 20px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .home {
+            height: 460px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 60px;
+            background-image: url('services-photos/droneRacingfinal.webp');
+            background-size: cover;
+            background-position: top;
+            margin-top: 40px;
+        }
+
+        .container {
+            text-align: left;
+            color: rgb(253, 253, 253);
+        }
+
+        .container h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            max-width: 550px;
+        }
+
+        .info {
+            margin-top: 0;
+            padding: 60px 160px;
+            text-align: center;
+        }
+
+        .info p {
+            text-align: justify;
+            word-spacing: 4px;
+            line-height: 2;
+        }
+
+
+
+        .card {
+            width: 220px;
+            height: 120px;
+            background-color: #ffffff;
+            padding: 14px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin-bottom: 60px;
+        }
+
+        .text {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4148aa;
+            transition: color 0.3s ease;
+        }
+
+        .photo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 14px;
+            overflow: hidden;
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card:hover {
+            background-color: #4148aa;
+        }
+
+        .card:hover .text {
+            color: #ffffff;
+        }
+
+        .card-collection {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 200px;
+        }
+
+
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+            padding: 0 120px;
+        }
+
+        .grid-item {
+            height: 250px;
+            padding: 10px;
+        }
+
+        .grid-item h3 {
+            font-weight: 500;
+            font-size: 22px;
+        }
+
+        .grid-item p {
+            text-align: justify;
+            margin-bottom: 0;
+            font-size: 15px;
+            line-height: 1.5;
+            color: rgb(82, 81, 81);
+        }
+
+
+
+        .contact-section {
+            height: 280px;
+            width: 100%;
+            background-image: url('Surr.jpg');
+            background-size: cover;
+            background-position: top;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 16px;
+            color: #623179;
+        }
+
+        .contact-section p {
+            margin-bottom: 16px;
+            font-size: large;
+            font-weight: bold;
+            letter-spacing: 0.8px;
+        }
+
+        .contact-section button {
+            padding: 10px 20px;
+            background-color: #3f1e64;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+
+
+        .footer {
+            color: #000000;
+            padding: 30px 100px;
+        }
+
+        .webInfo {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+        }
+
+        .webInfo section {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .webInfo h3 {
+            margin-bottom: 10px;
+        }
+
+        .webInfo p {
+            font-size: 15px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 160px;
+        }
+
+        .logo img {
+            height: 80%;
+            margin-bottom: 30px;
+        }
+
+        .mediaIcons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .mediaIcon {
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            border: 2px solid black;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mediaIcon img {
+            height: 70%;
+        }
+
+        .mediaCopyRight p {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .mediaCopyRight span {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-wrapper">
+
+            <div>
+                <span class="logo-name">DREON</span>
+            </div>
+            <nav>
+                <a href="#" class="menu-item">Home</a>
+                <a href="#" class="menu-item" id="scrollButton">Services</a>
+                <a href="#" class="menu-item">About Us</a>
+                <a href="#" class="menu-item">Blog</a>
+                <a href="#" class="menu-item">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="home">
+        <div class="container">
+            <h1>Drone Racing</h1>
+            <p>At DREON, we bring together the latest in drone technology and the most skilled pilots for an
+                unparalleled racing spectacle. Witness drones reach blistering speeds a
+                they navigate through challenging courses filled with twists, turns,
+                and obstacles. With first-person view goggles, you'll feel like you're
+                in the cockpit, soaring through the sky alongside our competitors.</p>
+        </div>
+    </div>
+    <div class="info">
+        <h2>Drone Racing in India</h2>
+        <p>At Dreon, we're dedicated to bringing the excitement of drone racing to enthusiasts worldwide. Our events are
+            meticulously crafted to offer a thrilling experience for both pilots and spectators. Participants strap on
+            their FPV goggles and navigate their drones through intricate courses filled with obstacles, tight turns,
+            and high-speed straightaways, while spectators are transported into the action, feeling every twist and turn
+            as if they were in the cockpit themselves. Whether you're a seasoned pilot or just starting out, there's a
+            place for you at Dreon's events, which offer a range of competitions catering to pilots of all skill levels,
+            from friendly races for beginners to intense championships for seasoned pros.
+            <br>
+            <br>
+            We believe in the power of community, and our events bring together pilots, enthusiasts, and spectators from
+            diverse backgrounds to share their passion for drones and technology. Stay updated with all the latest news
+            and announcements from Dreon by following us on social media and checking our website regularly. Join us at
+            Dreon's drone racing events and experience the thrill of high-speed competition, cutting-edge technology,
+            and community camaraderie. We look forward to seeing you at our next event!
+            <br>
+            <br>
+        </p>
+    </div>
+
+    <div class="card-collection">
+        <div class="card">
+            <div class="photo">
+                <img src="icon/faster.png" alt="">
+            </div>
+
+            <p class="text">First-Person View</p>
+        </div>
+        <div class="card">
+            <div class="photo">
+                <img src="icon/—Pngtree—people working in a table_7537097.png" alt="">
+            </div>
+            <p class="text">High-Speed Racing Action</p>
+        </div>
+        <div class="card">
+            <div class="photo">
+                <img src="icon/truck.png" alt="">
+            </div>
+            <p class="text">Innovative Technology</p>
+        </div>
+    </div>
+
+    <h1 style="text-align: center; color: rgb(41, 41, 240); font-weight: 600; font-size: 20px;">Deliverables We offer
+    </h1>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h3>Drone Racing</h3>
+            <p>In drone racing, pilots compete against each other to complete a set course in the fastest time possible.
+                Courses are often set up with obstacles, such as hoops, gates, and flags, that pilots must navigate
+                through while piloting their drones at high speeds.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Drone Combat</h3>
+            <p>Drone combat games involve drones equipped with non-lethal weapons, such as nets, lasers, or foam
+                projectiles, engaging in aerial combat with each other. Pilots aim to disable or "shoot down" their
+                opponents' drones while avoiding damage to their own. These games require strategic thinking, quick
+                reflexes, and precise control to outmaneuver opponents and emerge victorious.
+        </div>
+        <div class="grid-item">
+            <h3>Drone Freestyle</h3>
+            <p>In drone freestyle games, pilots showcase their creativity and skill by performing intricate aerial
+                maneuvers and tricks with their drones. Pilots choreograph routines that include flips, rolls, spins,
+                and other acrobatic maneuvers, often set to music. The goal is to impress judges and spectators with the
+                complexity, smoothness, and style of their maneuvers..</p>
+        </div>
+
+
+    </div>
+
+    <div class="contact-section">
+        <h2>Get in touch with us</h2>
+        <p>Talk to our team for any queries regarding drone surveying for your Industry.</p>
+        <button>Contact Us</button>
+    </div>
+
+    <div class="footer">
+        <div class="webInfo">
+            <div class="logo">
+                <img src="icon/image-removebg-preview (1).png" alt="">
+                <p></p>
+            </div>
+            <div class="section">
+                <h3>Partnership</h3>
+                <p>Websites</p>
+                <p>Social Media</p>
+                <p>Branding</p>
+            </div>
+            <div class="section">
+                <h3>About</h3>
+                <p>Our Projects</p>
+                <p>Careers</p>
+            </div>
+            <div class="section">
+                <h3>Support</h3>
+                <p>Support Request</p>
+                <p>Contact</p>
+            </div>
+        </div>
+        <div class="mediaInfo">
+            <hr>
+            <div class="mediaIcons">
+                <div class="mediaIcon">
+                    <img src="icon/facebook-f.svg" alt="">
+                </div>
+                <div class="mediaIcon">
+                    <img src="icon/instagram.svg" alt="">
+                </div>
+                <div class="mediaIcon">
+                    <img src="icon/x-twitter.svg" alt="">
+                </div>
+                <div class="mediaIcon">
+                    <img src="icon/whatsapp.svg" alt="">
+                </div>
+                <div class="mediaIcon">
+                    <img src="icon/envelope-regular.svg" alt="">
+                </div>
+            </div>
+            <div class="mediaCopyRight">
+                <p><span>&copy;</span>copyright. All right reserved.</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>

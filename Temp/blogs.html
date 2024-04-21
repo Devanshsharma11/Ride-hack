@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", sans-serif;
+            background-color: rgb(247, 247, 247);
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .blogs {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 100px;
+        }
+
+        .blog {
+            flex: 1;
+            margin: 0 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            height: 340px;
+            padding-bottom: 20px;
+        }
+
+        .blog img {
+            height: 200px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .blogText {
+            padding-left: 20px;
+        }
+
+        .blogText p {
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+
+        .blogText span {
+            color: #6c0ba9;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .blogText span:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>RECENT BLOGS</h2>
+    <div class="blogs">
+        <div class="blog">
+            <img src="public/Home-Drone.jpg" alt="Blog 1 Image">
+            <div class="blogText">
+                <p>Drones in Smart City Planning/ Urban Planning: A Bird's-Eye View</p>
+                <span>Read More &#10230;</span>
+            </div>
+        </div>
+        <div class="blog">
+            <img src="public/Home-Drone.jpg" alt="Blog 2 Image">
+            <div class="blogText">
+                <p>Drones in Smart City Planning/ Urban Planning: A Bird's-Eye View</p>
+                <span>Read More &#10230;</span>
+            </div>
+        </div>
+        <div class="blog">
+            <img src="public/Home-Drone.jpg" alt="Blog 3 Image">
+            <div class="blogText">
+                <p>Drones in Smart City Planning/ Urban Planning: A Bird's-Eye View</p>
+                <span>Read More &#10230;</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
